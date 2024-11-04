@@ -50,5 +50,6 @@ int main() {
     cout << "Maximum value in the knapsack = " << maxProfit << endl;
 
     return 0;   
-	// Item arr[] = { { 10, 60 }, { 20, 100 }, { 30, 120 } };    
+	// Item arr[] = { { 10, 60 }, { 20, 100 }, { 30, 120 } };
+        // t=50    
 }
