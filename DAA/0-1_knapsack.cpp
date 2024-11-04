@@ -60,45 +60,47 @@ int main() {
     return 0;
 }
 
-
-
-
+// // Write a program to solve a 0-1 Knapsack problem using dynamic programming or branch and
+// // bound strategy.
+// // assignment no 4
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// int knapSack(int W, int wt[], int val[], int n) {
-//     // Base Case
-//     if (n == 0 || W == 0)
-//         return 0;
-
-//     if (wt[n - 1] > W)
-//         return knapSack(W, wt, val, n - 1);
-
-//     return max(knapSack(W, wt, val, n - 1), 
-//                val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1));
+// int knapsack(int* values, int* weights, int n, int capacity) {
+//     if (n == 0 || capacity == 0) return 0;
+    
+//     if (weights[n - 1] <= capacity) {
+//         return max(
+//             knapsack(values, weights, n - 1, capacity - weights[n - 1]) + values[n - 1],
+//             knapsack(values, weights, n - 1, capacity)
+//         );
+//     } else {
+//         return knapsack(values, weights, n - 1, capacity);
+//     }
 // }
 
 // int main() {
+//     int capacity;
+//     cout << "Enter the maximum weight of the knapsack: ";
+//     cin >> capacity;
+    
 //     int n;
-
 //     cout << "Enter the number of items: ";
 //     cin >> n;
-
-//     int* profit = new int[n];
-//     int* weight = new int[n];
-
-//     cout << "Enter the weights and values of the items (weight value):\n";
+    
+//     int values[n], weights[n];
+//     cout << "Enter weight and value of each item:\n";
 //     for (int i = 0; i < n; i++) {
-//         cout << "Item " << i + 1 << ": ";
-//         cin >> weight[i] >> profit[i];
+//         cout << "Item " << i + 1 << " - Weight: ";
+//         cin >> weights[i];
+//         cout << "Item " << i + 1 << " - Value: ";
+//         cin >> values[i];
 //     }
 
-//     int W;
-//     cout << "Enter the maximum weight of the knapsack: ";
-//     cin >> W;
-
-//     int maxProfit = knapSack(W, weight, profit, n);
-//     cout << "Maximum value in the knapsack = " << maxProfit << endl;
-    
+//     cout << "Maximum value in the knapsack = " << knapsack(values, weights, n, capacity) << endl;
 //     return 0;
 // }
+
+
+// // Item arr[] = { { 10, 60 }, { 20, 100 }, { 30, 120 } };   
+// //t=50
