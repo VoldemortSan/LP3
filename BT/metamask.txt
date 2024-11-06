@@ -1,0 +1,22 @@
+Practical (Solidity smart contract)
+Copy paste codes in remix ide
+Compile both
+Deploy
+Add 100 in wei, click deposit
+Show other transcations
+ step 1: create account
+ step 2: deposit
+ step 3: getBalance
+ step 4: transfer: get recepient from account in the deploy section on remix
+ step 5: getBalance
+ step 6: withdraw
+
+Metamask transaction
+make account by installing metamask extension
+use sepolia in ethreum mainnet test network section
+search sepolia faucet on google
+open the gcc one
+add account address in faucet and proceed
+add new account on metamask and copy its address
+go other account, click send and enter 
+0.000000000001 and send
